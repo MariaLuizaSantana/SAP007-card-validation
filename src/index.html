@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8" />
-    <title>Tarjeta de crédito válida</title>
+    <title>Valide seu cartão</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Valide aqui seu cartão!</h1>
+      <p>Para evitar fraudes digite os números do cartão e descubra se o cartão é válido ou não.</p>
     </div>
-    <script src="index.js" type="module"></script>
+      <div>  
+          <!--Aqui eu criei caixas para que você consiga escrever apenas numeros positivos e 1unidade-->
+          <input type="number" min="0" max="9" id="r1"> 
+          <input type="number" min="0" max="9" id="r2">
+          <input type="number" min="0" max="9" id="r3">
+          <input type="number" min="0" max="9" id="r4">
+          <!--Coloquei um botão que ao clicar o calculo é feito e um alert exibido-->
+          <button onclick="main()"> Calcular</button>
+          
+          
+
+
+
+      </div>
+      <!--Liguei o meu js ao meu html-->
+      <script src="index.js"></script>
   </body>
 </html>
