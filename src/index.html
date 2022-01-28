@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>Valide seu cartão</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    
+</head>
   <body>
     <div id="root">
       <h1>Valide aqui seu cartão!</h1>
@@ -12,18 +13,19 @@
     </div>
       <div>  
           <!--Aqui eu criei caixas para que você consiga escrever apenas numeros positivos e 1unidade-->
-          <input type="number" min="0" max="9" id="r1"> 
-          <input type="number" min="0" max="9" id="r2">
-          <input type="number" min="0" max="9" id="r3">
-          <input type="number" min="0" max="9" id="r4">
+          <input type="number" min="0" max="9" oninput="validity.valid||(value='');" class="b1" id="r1"> 
+          <input type="number" min="0" max="9" oninput="validity.valid||(value='');" class="b2" id="r2">
+          <input type="number" min="0" max="9" oninput="validity.valid||(value='');" class="b3" id="r3">
+          <input type="number" min="0" max="9" oninput="validity.valid||(value='');" class="b4" id="r4"> 
+        </div>
           <!--Coloquei um botão que ao clicar o calculo é feito e um alert exibido-->
-          <button onclick="main()"> Calcular</button>
+          <div>  <button onclick="main()"> Calcular</button>  </div>
           
           
 
 
 
-      </div>
+      
       <!--Liguei o meu js ao meu html-->
       <script src="index.js"></script>
   </body>
