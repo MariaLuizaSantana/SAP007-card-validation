@@ -5,31 +5,34 @@ body {
     background-size: cover;
 }
 h1, p{
-    font-family: monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     text-align: center;
     font-weight: 600;
-    border: 1px solid white;
+    font-size: 200%;
 }
 
 .b2 {
 text-align: justify;
-margin: 200px auto;
+margin: 100px auto;
 display: block;
-color: wheat;
-background-color: blue;
-font-family: monospace
+color: black;
+background-color: white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 2cm;
+padding: 10px;
+
 }
  .b1{
-     font-size: 1cm;
-     size: 1cm;
+     font-size: 40px;
+     size: 30px;
      text-align: center;
-     margin: 200px auto;
+     margin: 100px auto;
      display: block;
-     color: blue;
-     background-color: wheat
+     color: black;
+     background-color: white;
+     padding: 10px;
  }
-
 
 
 

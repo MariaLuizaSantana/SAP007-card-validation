@@ -1,11 +1,11 @@
 import validator from './validator.js';
 
- const botao1 = document.getElementById("botao")
+ let botao1 = document.getElementById("botao")
     
   botao1.addEventListener("click",function () {
-    const cardnumb = document.getElementById("r1").value
-    const resultfinal = validator.isValid(cardnumb)
-    console.log(cardnumb,resultfinal)
+    let cardNumb = document.getElementById("r1").value
+    let resultFinal = validator.isValid(cardNumb)
+    console.log(resultFinal)
   });
   
      

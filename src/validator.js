@@ -2,39 +2,41 @@ const validator = {
   isValid:
 
   function (logicastring){
-    const cardnumb = logicastring.split("").reverse()
-    let primeiroevnt = 0
-    let segundoevt = 0
-    let terceiroevt = 0
-    let total1 = 0
-    let total2 = 0
-    let total3 = 0
+    console.log(logicastring, "string")
+    let cardNumb = logicastring.split("").reverse()
+    console.log(cardNumb,"array")
+    let primeiroEvent = 0
+    let segundoEvent = 0
+    let terceiroEvent = 0
 
-    for (let i=0; i <cardnumb.length;i++) { 
-      const num = parseInt(cardnumb[i])
-      if ((i % 2 !== 0) && (num >= 5)) {
-        
-        total1 = primeiroevnt + (num *2)-9;
-      
+    for (let i=0; i < cardNumb.length;i++) { 
+      let num = parseInt(cardNumb[i])
+      if ((i % 2 !== 0) && (num>=5)){
+        primeiroEvent = (num*2-9);
+        console.log(i, num, primeiroEvent,"par maior ou igual a 5")
+
       }
-        else if ((i % 2 !== 0) && (num <=5 )) {
+        else if ((i % 2 !== 0) && (num<=5)) {
     
-          total2 = segundoevt + (num *2);
+          segundoEvent = (num *2);
+          console.log(i,num,segundoEvent,"par menor ou igual a 5")
     
         }
         else {
 
-          total3 = terceiroevt + num;
-
-        }   
-      if ((total1 + total2 + total3) % 10 === 0) {
-       
-        alert("cartão válido")
-      }  
-        else {
-          alert("cartão inválido")
-        }
+          terceiroEvent = (num);
+          console.log(terceiroEvent,"impar")
+       }     
   }
+  if ((primeiroEvent + segundoEvent + terceiroEvent) % 10 !== 0) {
+    console.log(primeiroEvent, segundoEvent, terceiroEvent)
+    console.log(primeiroEvent + segundoEvent + terceiroEvent)
+       
+    return true
+   }  
+     else {
+       return false
+     }
 }
 }
   export default validator;
