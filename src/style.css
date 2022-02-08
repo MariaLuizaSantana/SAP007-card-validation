@@ -13,27 +13,25 @@ h1, p{
 }
 
 .b2 {
-text-align: justify;
-margin: 100px auto;
-display: block;
-color: black;
-background-color: white;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-width: 2cm;
-padding: 10px;
+    text-align: justify;
+    margin: 100px auto;
+    display: block;
+    color: black;
+    background-color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 2cm;
+    padding: 10px;
 
 }
- .b1{
-     font-size: 40px;
-     size: 30px;
-     text-align: center;
-     margin: 100px auto;
-     display: block;
-     color: black;
-     background-color: white;
-     padding: 10px;
- }
-
-
+.b1{
+    font-size: 40px;
+    size: 30px;
+    text-align: center;
+    margin: 100px auto;
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+}
 
    

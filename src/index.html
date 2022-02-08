@@ -11,18 +11,17 @@
       <h1>Valide aqui seu cartão!</h1>
       <p>Para evitar fraudes digite os números do cartão e descubra se o cartão é válido ou não.</p>
     </div>
-     <!--Aqui eu criei caixas para que você consiga escrever apenas numeros positivos e 1unidade-->
+     <!--Aqui eu criei a caixa para que você consiga escrever apenas numeros positivos-->
       <input type="text" 
       title="digite apenas números"
       maxlength="16" 
-      onkeypress="return event.charCode >= 48 && event.charCode <= 57"  
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57"
       placeholder="Digite o número do cartão" 
       class="b1"
       id="r1"> 
     <!--Coloquei um botão que ao clicar o calculo é feito e um alert exibido-->
-    <div> <button id="botao" class="b2"> Calcular</button> </div>
-          
-      <!--Liguei o meu js ao meu html-->
+    <div> <button id="botao" class="b2"> Calcular </button> </div>
+
       <script src="index.js"  type="module"></script>
   </body>
 </html>
