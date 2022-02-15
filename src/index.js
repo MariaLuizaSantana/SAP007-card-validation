@@ -1,14 +1,22 @@
 import validator from './validator.js';
-//a variavel recebe o id do botao do html//
- let botao1 = document.getElementById("botao")
-    //ler o click do botao e executa a função que está no validador//
-  botao1.addEventListener("click",function () {
-    
-    let cardNumb = document.getElementById("r1").value
-
+function validadorCard (){
+    let cardNumb = document.getElementById("numDigitado").value
     let resultFinal = validator.isValid(cardNumb)
+    console.log(resultFinal)
+    let mascarar = validator.maskify(cardNumb)
+    let resultmask = document.getElementById("numMask")
+    
+    if (cardNumb === ""){
+        return resultmask.textContent = " ENTER A NUMBER"
+    }
+    if (resultFinal) {
+        resultmask.textContent = mascarar + " VALID CARD" 
+    }
+    else {
+        resultmask.textContent = mascarar + " INVALID CARD"
+    }
+    document.getElementById("numDigitado").value = ""
 
-    console.log("click",cardNumb,resultFinal)
-  });
-  
- console.log(validator);
+}
+let runBotao = document.getElementById("botao")
+runBotao.addEventListener("click", validadorCard)
